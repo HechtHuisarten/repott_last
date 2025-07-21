@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rapport - Hecht Rapportageportaal</title>
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Link to the main stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Power BI Client Script -->
+    <script src="https://cdn.jsdelivr.net/npm/powerbi-client@2.22.3/dist/powerbi.min.js"></script>
+</head>
+<body id="report-page">
+
+    <!-- Header - Consistent with select-report.html -->
+    <header class="page-header">
+        <a href="select-report.html" class="header-brand">Hecht</a>
+        <div class="header-user-info">
+            <span id="userInfo"></span>
+            <button id="logoutButton" class="logout-btn">Uitloggen</button>
+        </div>
+    </header>
+
+    <!-- Main Content Area for the Report -->
+    <main class="main-content">
+        <div id="reportContainer">
+            <!-- Power BI Report will be embedded here by report.js -->
+        </div>
+    </main>
+
+    <!-- Your Firebase and report logic script -->
+    <script type="module" src="js/report.js"></script>
+</body>
+</html>

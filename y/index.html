@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Hecht Report Portal</title>
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Link to your external stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Link to your JS file -->
+    <script type="module" src="js/login.js" defer></script>
+</head>
+<body id="login-page">
+
+    <main class="main-content">
+        <!-- "Floating" Header Text -->
+        <div class="header-text-container">
+            <h1 class="login-title">Hecht Business Intelligence</h1>
+            <p class="login-subtitle">Log in om verder te gaan.</p>
+        </div>
+        
+        <!-- Authentication Controls -->
+        <div id="auth-container">
+            <button id="loginButton">
+                <svg class="btn-icon" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+                    <path d="M1.5 1.5H10.5V10.5H1.5V1.5Z M1.5 11.5H10.5V20.5H1.5V11.5Z M11.5 1.5H20.5V10.5H11.5V1.5Z M11.5 11.5H20.5V20.5H11.5V11.5Z"/>
+                </svg>
+                Inloggen met Outlook
+            </button>
+            <div id="loader" class="loader hidden"></div>
+        </div>
+    </main>
+
+</body>
+</html>
